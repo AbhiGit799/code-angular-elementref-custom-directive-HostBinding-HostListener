@@ -1,0 +1,109 @@
+<div style="text-align: center">
+
+  <h1>Angular Learning Topic = ElementRef | Custom Directives </h1>
+
+  <br>
+  <hr>
+  <br>
+
+  <h2>Hello World!!</h2>
+
+  <br>
+
+  <p>Good Day</p>
+
+  <br><br>
+
+  <h1> Custom Directives </h1>
+  <br>
+  <hr>
+
+  <h3 appTheme>I am Ok</h3>
+
+  <br>
+
+  <button type="button" (click)="showHide()">Show/Hide</button>
+
+  <br> <br>
+
+  <p *ngIf="isShow">Hi AB</p>
+
+  <br> 
+
+  <p *appMyngIf="isShow">Hi XYZ</p>
+
+  <br>
+ 
+ <ng-template [appMyngIf]="isShow" >Hi OPPO</ng-template>
+
+ <br><br>
+
+ <h1> @HostBinding and @HostListener </h1>
+ <br>
+ <hr>
+ <br>
+
+ <div appChangebgColor>
+  Hi, How are you ? Click Here, To Show Message
+ </div>
+
+ <br>
+
+ <p appChangebgColor>Hi !!  Click Here, To Show Message  </p>
+
+
+ <br>
+ 
+ <hr>
+ 
+ <br><br>
+
+
+
+ <div appBgColor defaultColor="orange" mouseOverColor="cyan" mouseLeaveColor="crimson"  >Hi, How are You ?</div>
+
+<br/>
+
+<div appBgColor>Hi, How are You ?</div>
+
+<br/>
+
+<div appBgColor [defaultColor]="'orange'" [mouseOverColor]="'cyan'"  [mouseLeaveColor]="'burlywood'"  >Hi, How are You ?</div>
+
+<br/>
+
+<div appBgColor [defaultColor]="varorange" [mouseOverColor]="varcyan"  [mouseLeaveColor]="varpurple"  >Hi, How are You ?</div>
+
+
+
+
+<br/> <br/> <br/> 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
